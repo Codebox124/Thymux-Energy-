@@ -30,7 +30,7 @@ const Hero = () => {
             className="flex items-center gap-2 bg-white/5 border justify-center mx-auto border-white/10 w-fit px-4 py-2 rounded-full mb-8 backdrop-blur-sm"
           >
             <IconSun className="text-gold" size={20} />
-            <span className="text-cream/80 font-nunito text-sm font-medium tracking-wide uppercase">
+            <span className="text-cream/80 font-nunito md:text-sm text-xs font-medium tracking-wide uppercase">
               Leading the Renewable Revolution
             </span>
           </motion.div>

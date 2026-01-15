@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { IconMenu, IconMenu2, IconX } from "@tabler/icons-react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -62,7 +62,7 @@ const Navbar = () => {
           className="md:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <IconX size={30} /> : <IconMenu2 size={30} />}
+          {isOpen ? <IconX size={30} /> : <IconMenu size={30} />}
         </button>
       </div>
 

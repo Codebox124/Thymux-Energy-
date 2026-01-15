@@ -11,14 +11,13 @@ import {
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-navy-deep">
-      {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
           src="/hero.jpg"
           alt="Solar Panels"
           className="object-cover opacity-30 h-screen w-full"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-navy-deep/60 via-navy-deep/80 to-navy-deep"></div>
+        <div className="absolute inset-0 bg-linear-to-b from-navy-deep/60 via-navy-deep/80 to-navy-deep"></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10 ">

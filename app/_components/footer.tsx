@@ -19,7 +19,6 @@ const Footer = () => {
     <footer className="bg-navy-deep text-white pt-20 pb-10 border-t border-white/5">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand Column */}
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
               <Image src={"/logo.jpeg"} alt="logo" width={100} height={100} />

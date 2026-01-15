@@ -1,4 +1,5 @@
 import Hero from "./_components/hero";
+import Media from "./_components/media";
 import TrustedPartners from "./_components/trusted-partners";
 
 const Page = () => {
@@ -6,6 +7,7 @@ const Page = () => {
     <main>
       <Hero />
       <TrustedPartners />
+      <Media />
       <section className="bg-white py-20 px-6">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-sora font-bold text-navy-deep mb-6">

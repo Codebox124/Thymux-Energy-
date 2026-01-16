@@ -7,12 +7,30 @@ const CTA = () => (
   <section className="bg-white">
     <div className="max-w-7xl mx-auto px-6 py-20">
       <div className="bg-gray-100 rounded-3xl p-12 md:p-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <motion.h2
+        initial={fromBottomToTop.initial}
+        whileInView={fromBottomToTop.whileInView}
+        viewport={others.viewport}
+        transition={{
+          duration:0.8,
+          ease:"easeInOut",
+          delay: 0.6
+        }}
+        className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
           Financial Strength. Risk Excellence.
-        </h2>
-        <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+        </motion.h2>
+        <motion.p
+        initial={fromBottomToTop.initial}
+        whileInView={fromBottomToTop.whileInView}
+        viewport={others.viewport}
+        transition={{
+          duration:0.8,
+          ease:"easeInOut",
+          delay: 0.6
+        }}
+        className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Partner with a financially robust trading house committed to comprehensive risk management and regulatory compliance.
-        </p>
+        </motion.p>
         <motion.button
         initial={fromBottomToTop.initial}
         whileInView={fromBottomToTop.whileInView}

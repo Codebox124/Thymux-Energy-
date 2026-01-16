@@ -2,31 +2,35 @@
 
 import { motion } from "framer-motion";
 import {
-  IconBrandTabler,
-  IconWind,
-  IconDroplet,
-  IconTornado,
-  IconRecycle,
-} from "@tabler/icons-react";
+  Fuel,
+  Ship,
+  Droplets,
+  Factory,
+  Gauge,
+} from "lucide-react";
 
 const partners = [
-  { name: "Solaris Tech", icon: IconBrandTabler },
-  { name: "WindFlow", icon: IconWind },
-  { name: "EcoStream", icon: IconDroplet },
-  { name: "Aura Energy", icon: IconTornado },
-  { name: "Genesis Renew", icon: IconRecycle },
+  { name: "PetroMax Trading", icon: Fuel },
+  { name: "Maritime Logistics", icon: Ship },
+  { name: "Gulf Energy Corp", icon: Droplets },
+  { name: "Refinery Solutions", icon: Factory },
+  { name: "Energy Metrics", icon: Gauge },
 ];
 
 const TrustedPartners = () => {
   return (
-    <section className="py-20 bg-cream/30">
-      <div className="container mx-auto px-6">
+    <section className="py-20 bg-slate-900/50 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1601972599748-26dd1bebd7a2?w=1600&q=80')] bg-cover bg-center opacity-5"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/90 via-slate-900/80 to-slate-950/90"></div>
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-12">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="text-soft-blue-gray font-nunito font-semibold uppercase tracking-[0.2em] text-sm mb-4"
+            className="text-amber-500 font-semibold uppercase tracking-[0.2em] text-sm mb-4"
           >
             Trusted by Industry Leaders
           </motion.p>
@@ -34,9 +38,9 @@ const TrustedPartners = () => {
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-sora font-bold text-navy-deep"
+            className="text-3xl md:text-4xl font-bold text-white"
           >
-            Engineering Excellence with Global Partners
+            Powering Success with Global Partners
           </motion.h2>
         </div>
 
@@ -48,16 +52,16 @@ const TrustedPartners = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="flex items-center gap-3 group pointer-events-none"
+              className="flex items-center gap-3 group cursor-pointer"
             >
               <partner.icon
                 size={40}
-                className="text-gold group-hover:text-gold-brass transition-colors"
+                className="text-amber-500 group-hover:text-amber-400 transition-colors"
               />
-              <span className="text-navy font-sora font-bold text-xl tracking-tighter">
+              <span className="text-white font-bold text-xl tracking-tight">
                 {partner.name.split(" ")[0]}
-                <span className="text-gold">
-                  {partner.name.split(" ")[1] || ""}
+                <span className="text-amber-500">
+                  {" " + (partner.name.split(" ")[1] || "")}
                 </span>
               </span>
             </motion.div>
@@ -65,7 +69,7 @@ const TrustedPartners = () => {
         </div>
 
         {/* Animated Line */}
-        <div className="mt-20 h-[1px] w-full bg-gradient-to-r from-transparent via-navy/10 to-transparent"></div>
+        <div className="mt-20 h-[1px] w-full bg-gradient-to-r from-transparent via-amber-500/20 to-transparent"></div>
       </div>
     </section>
   );

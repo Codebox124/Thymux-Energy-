@@ -3,19 +3,18 @@
 import { useEffect, useRef } from "react"
 import {
     Ship,
-    FilePenLine as Pipeline,
-    Factory,
+    Truck,
     Warehouse,
+    MapPin,
     Database,
     TrendingUp,
     Globe,
     Shield,
     Zap,
     ArrowRight,
-    Leaf,
+    Clock,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 function useIntersectionObserver() {
     const ref = useRef<HTMLDivElement>(null)
@@ -44,61 +43,61 @@ function useIntersectionObserver() {
 const logisticsServices = [
     {
         icon: Ship,
-        title: "Shipping",
+        title: "Maritime Logistics",
         description:
-            "Access to a large fleet of time-charter vessels with strategic investments into vessels as joint-venture partners.",
-    },
-    {
-        icon: Pipeline,
-        title: "Pipelines",
-        description:
-            "Pipeline investments provide logistical flexibility to efficiently distribute energy across various markets.",
-    },
-    {
-        icon: Factory,
-        title: "Refineries",
-        description: "Investments in crude oil, oil products, and biofuel plants complement our physical trading activity.",
+            "Strategic partnerships with vessel operators and shipping companies ensuring reliable crude oil and petroleum product transportation across global routes.",
     },
     {
         icon: Warehouse,
-        title: "Terminals",
-        description: "Terminals are highly complementary assets that secure access to physical import and export flows.",
+        title: "Terminal Access",
+        description:
+            "Exclusive access to major oil terminals and ports worldwide, facilitating seamless loading, discharge, and transshipment operations.",
     },
     {
         icon: Database,
-        title: "Storage",
+        title: "Storage Solutions",
+        description: "Strategic storage capacity at key hubs enabling efficient inventory management and market timing for optimal trading opportunities.",
+    },
+    {
+        icon: Truck,
+        title: "Land Transportation",
+        description: "Integrated road and rail logistics networks for inland distribution of refined petroleum products to end-users and distributors.",
+    },
+    {
+        icon: MapPin,
+        title: "Supply Chain Management",
         description:
-            "Strategic storage facilities for crude oil and products generate value through time and distance arbitrage.",
+            "End-to-end supply chain coordination from origin to destination, ensuring product quality, compliance, and timely delivery.",
     },
 ]
 
 const benefits = [
     {
         icon: TrendingUp,
-        title: "Diversified Operations",
-        description: "Create additional sources of income through integrated asset management",
+        title: "Operational Efficiency",
+        description: "Streamlined logistics reduce costs and improve delivery times across all markets",
     },
     {
         icon: Globe,
-        title: "Global Reach",
-        description: "Physical presence worldwide providing valuable market insights",
+        title: "Global Network",
+        description: "Strategic presence in major trading hubs provides market intelligence and agility",
     },
     {
         icon: Shield,
-        title: "Supply Security",
-        description: "Greater control over physical product flows protecting against supply risk",
+        title: "Risk Management",
+        description: "Diversified logistics infrastructure mitigates supply chain disruptions and delays",
     },
     {
         icon: Zap,
-        title: "Operational Synergies",
-        description: "Economies of scale capturing additional margin along the value chain",
+        title: "Rapid Response",
+        description: "Flexible operations adapt quickly to changing market conditions and customer needs",
     },
 ]
 
 const stats = [
-    { value: "100+", label: "Fleet Vessels" },
-    { value: "45+", label: "Countries" },
-    { value: "500+", label: "Partners" },
+    { value: "50+", label: "Shipping Partners" },
+    { value: "30+", label: "Port Terminals" },
+    { value: "25+", label: "Markets Served" },
     { value: "24/7", label: "Operations" },
 ]
 
@@ -122,20 +121,19 @@ export default function LogisticsPage() {
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0">
                         <span className="inline-block px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6">
-                            Moving Energy Forward
+                            Seamless Global Logistics
                         </span>
                     </div>
                     <h1 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white text-balance">
-                        Logistics & <span className="text-amber-500">Infrastructure</span>
+                        Logistics & <span className="text-gold">Supply Chain</span>
                     </h1>
                     <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        Thymux Energy has invested in logistics and midstream assets that strategically complement our daily
-                        operations, enhancing management of sourcing and distribution while diversifying income streams.
+                        Thymux Energy FZCO leverages world-class infrastructure and strategic partnerships to deliver efficient, reliable logistics solutions for crude oil and refined petroleum products across global markets.
                     </p>
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/contact"
-                            className="inline-flex items-center justify-center gap-2 bg-amber-500 text-[#1b2d42] font-semibold px-8 py-4 rounded-full hover:bg-amber-400 transition-all duration-300 hover:scale-105"
+                            className="inline-flex items-center justify-center gap-2 bg-gold text-[#1b2d42] font-semibold px-8 py-4 rounded-full hover:bg-amber-400 transition-all duration-300 hover:scale-105"
                         >
                             Get Started
                             <ArrowRight className="w-5 h-5" />
@@ -144,14 +142,14 @@ export default function LogisticsPage() {
                             href="/projects"
                             className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-semibold px-8 py-4 rounded-full hover:bg-white/10 transition-all duration-300"
                         >
-                            View Our Projects
+                            View Our Operations
                         </Link>
                     </div>
                 </div>
 
                 <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
                     <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center pt-2">
-                        <div className="w-1.5 h-3 bg-amber-500 rounded-full animate-pulse" />
+                        <div className="w-1.5 h-3 bg-gold rounded-full animate-pulse" />
                     </div>
                 </div>
             </section>
@@ -179,10 +177,10 @@ export default function LogisticsPage() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-16">
                         <h2 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-4xl md:text-5xl font-bold text-[#1b2d42] mb-4">
-                            Our <span className="">Logistics Services</span>
+                            Our <span className="text-gold">Logistics Capabilities</span>
                         </h2>
                         <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-600 max-w-2xl mx-auto">
-                            Comprehensive infrastructure investments that support efficient energy distribution and trading operations
+                            Comprehensive logistics infrastructure supporting efficient oil and gas trading operations worldwide
                         </p>
                     </div>
 
@@ -193,9 +191,9 @@ export default function LogisticsPage() {
                                 className={`animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0`}
                                 style={{ transitionDelay: `${index * 100}ms` }}
                             >
-                                <div className="group h-full p-8 bg-white border border-gray-200 rounded-2xl  transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-amber-500/5">
-                                    <div className="w-14 h-14 bg-[#1b2d42] rounded-xl flex items-center justify-center mb-6 transition-colors duration-300">
-                                        <service.icon className="w-7 h-7 text-white" />
+                                <div className="group h-full p-8 bg-white border border-gray-200 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gold/5">
+                                    <div className="w-14 h-14 bg-[#1b2d42] rounded-xl flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
+                                        <service.icon className="w-7 h-7 text-white group-hover:text-[#1b2d42]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#1b2d42] mb-3">{service.title}</h3>
                                     <p className="text-gray-600 leading-relaxed">{service.description}</p>
@@ -212,12 +210,10 @@ export default function LogisticsPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div>
                             <h2 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-3xl md:text-4xl font-bold text-[#1b2d42] mb-6">
-                                Integration Benefits for <span className="text-gold">Your Business</span>
+                                Integrated Logistics for <span className="text-gold">Your Success</span>
                             </h2>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-600 mb-8 leading-relaxed">
-                                Our activities along the energy supply chain, and physical presence throughout the world, provide
-                                valuable insights into the marketplace. This information supports our ability to identify and capture
-                                opportunities.
+                                Our extensive logistics network and strategic partnerships across major trading hubs provide valuable market insights and operational flexibility, enabling us to identify and capture opportunities for our clients.
                             </p>
 
                             <div className="space-y-6">
@@ -241,17 +237,15 @@ export default function LogisticsPage() {
 
                         <div className="animate-on-scroll opacity-0 translate-x-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-x-0 relative">
                             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                                <Image
+                                <img
                                     src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop"
-                                    alt="Energy logistics and shipping"
-                                    className="w-full h-125 object-cover"
-                                    width={828}
-                                    height={500}
+                                    alt="Oil tanker and shipping logistics"
+                                    className="w-full h-[500px] object-cover"
                                 />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-[#1b2d42] rounded-xl p-6 shadow-2xl">
-                                <p className="text-gold text-4xl font-bold">100+</p>
-                                <p className="text-gray-300 text-sm">Fleet Vessels</p>
+                                <p className="text-gold text-4xl font-bold">50+</p>
+                                <p className="text-gray-300 text-sm">Shipping Partners</p>
                             </div>
                             <div className="absolute -top-6 -right-6 bg-gold rounded-xl p-4 shadow-2xl">
                                 <Globe className="w-8 h-8 text-[#1b2d42]" />
@@ -261,18 +255,16 @@ export default function LogisticsPage() {
                 </div>
             </section>
 
-            {/* Energy Transition Section - Dark */}
+            {/* Infrastructure Section - Dark */}
             <section className="py-24 bg-[#1b2d42]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="animate-on-scroll opacity-0 -translate-x-5 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-x-0 order-2 lg:order-1">
                             <div className="relative rounded-2xl overflow-hidden">
-                                <Image
-                                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072&auto=format&fit=crop"
-                                    alt="Solar panels and renewable energy"
-                                    className="w-full h-100 object-cover"
-                                    width={828} 
-                                    height={500}
+                                <img
+                                    src="https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2072&auto=format&fit=crop"
+                                    alt="Oil storage tanks and infrastructure"
+                                    className="w-full h-[500px] object-cover"
                                 />
                             </div>
                         </div>
@@ -280,27 +272,25 @@ export default function LogisticsPage() {
                         <div className="order-1 lg:order-2">
                             <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0">
                                 <span className="inline-flex items-center gap-2 px-4 py-2 bg-gold/20 border border-gold/30 rounded-full text-gold text-sm font-medium mb-6">
-                                    <Leaf className="w-4 h-4" />
-                                    Sustainability Commitment
+                                    <Clock className="w-4 h-4" />
+                                    Strategic Infrastructure
                                 </span>
                             </div>
                             <h2 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-3xl md:text-4xl font-bold text-white mb-6">
-                                Supporting the <span className="text-gold">Energy Transition</span>
+                                Built for <span className="text-gold">Reliability</span>
                             </h2>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-300 mb-6 leading-relaxed">
-                                As part of Thymux Energy&apos;s efforts to support the Energy Transition, we have committed to improving the
-                                environmental impact of our current portfolio and investing in new sustainable commodities.
+                                Our logistics infrastructure is built on strategic partnerships with leading terminal operators, shipping companies, and storage facilities. This network enables us to deliver crude oil and refined products efficiently and reliably.
                             </p>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-400 mb-8 leading-relaxed">
-                                Our biofuel plants and renewable energy investments represent our dedication to a cleaner future while
-                                maintaining operational excellence in traditional energy logistics.
+                                From major export terminals to key import hubs, we maintain 24/7 operational capability to meet the demands of our global trading operations and ensure uninterrupted supply to our clients.
                             </p>
                             <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-400 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0">
                                 <Link
-                                    href="/solutions"
+                                    href="/projects"
                                     className="inline-flex items-center gap-2 text-gold font-semibold hover:gap-4 transition-all duration-300"
                                 >
-                                    Learn about our solutions
+                                    Explore our trading operations
                                     <ArrowRight className="w-5 h-5" />
                                 </Link>
                             </div>
@@ -313,11 +303,10 @@ export default function LogisticsPage() {
             <section className="py-24 bg-white">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-3xl md:text-4xl font-bold text-[#1b2d42] mb-6">
-                        Ready to <span className="text-gold">Partner with Us?</span>
+                        Ready to <span className="text-gold">Optimize Your Supply Chain?</span>
                     </h2>
                     <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Discover how our integrated logistics network can support your energy needs with reliable, efficient, and
-                        sustainable solutions.
+                        Discover how our integrated logistics network can support your energy trading needs with reliable, efficient, and transparent solutions.
                     </p>
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link

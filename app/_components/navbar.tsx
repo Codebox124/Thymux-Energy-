@@ -86,7 +86,7 @@ const Navbar = () => {
             )
           )}
           <Link
-            href="/get-started"
+            href="/contact"
             className="bg-gold hover:bg-bright-gold text-navy-deep px-6 py-2.5 rounded-full font-sora font-bold transition-all hover:scale-105 active:scale-95 shadow-[0_4px_20px_rgba(212,175,55,0.2)]"
           >
             Get Started
@@ -143,7 +143,7 @@ const Navbar = () => {
               </div>
             ))}
             <Link
-              href="/get-started"
+              href="/contact"
               onClick={() => setIsOpen(false)}
               className="bg-gold text-navy-deep text-center py-4 rounded-xl font-sora font-bold"
             >

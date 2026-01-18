@@ -19,7 +19,7 @@ const Page = () => {
            Ready to Partner With Us?
           </h2>
           <p className="text-xl text-soft-blue-gray font-nunito max-w-2xl mx-auto mb-10">
-             Experience a new standard of professionalism in energy trading. From spot deals to long-term supply agreements, we're equipped to handle transactions of any size.
+             Experience a new standard of professionalism in energy trading. From spot deals to long-term supply agreements, we&apos;re equipped to handle transactions of any size.
           </p>
           <button className="bg-gold hover:bg-bright-gold text-navy-deep px-10 py-4 rounded-full font-sora font-extrabold text-lg transition-all shadow-sm">
               Contact Our Team

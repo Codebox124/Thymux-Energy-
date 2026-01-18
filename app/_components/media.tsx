@@ -77,12 +77,14 @@ const Media = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Button
-              variant="outline"
-              className="border-gold text-navy-deep hover:bg-gold hover:text-white rounded-full font-nunito font-bold px-6 py-2 h-auto"
-            >
-              View All News <IconArrowRight className="ml-2" />
-            </Button>
+            <Link href="/media/" passHref>
+              <Button
+                variant="outline"
+                className="border-gold text-navy-deep hover:bg-gold hover:text-white rounded-full font-nunito font-bold px-6 py-2 h-auto"
+              >
+                View All News <IconArrowRight className="ml-2" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
 

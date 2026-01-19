@@ -10,10 +10,24 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { useParams } from "next/navigation";
 
-const articlesData = {
-  1: {
-    id: 1,
+interface NewsArticle {
+  id: string;
+  title: string;
+  content: string;
+  category: string;
+  date: string;
+  author: string;
+  readTime: string;
+  tags: string[];
+  relatedArticles: string[]; // Changed to string[] to match keys
+  image: string;
+}
+
+const NEWS_ARTICLES: Record<string, NewsArticle> = {
+  "1": {
+    id: "1",
     category: "Press Release",
     title: "Thymux Energy Expands Solar Operations to West Africa",
     date: "Jan 12, 2026",
@@ -47,10 +61,10 @@ const articlesData = {
       <p>For more information about this expansion or partnership opportunities, please contact our business development team at expansion@thymuxenergy.com.</p>
     `,
     tags: ["Solar Energy", "West Africa", "Expansion", "Sustainability"],
-    relatedArticles: [2, 3],
+    relatedArticles: ["2"], // Fixed: use string keys
   },
-  2: {
-    id: 2,
+  "2": {
+    id: "2",
     category: "Innovation",
     title: "Introducing Next-Gen High Efficiency PV Modules",
     date: "Jan 05, 2026",
@@ -91,17 +105,14 @@ const articlesData = {
       <p>This is just the beginning of a new era in solar technology. Our R&D team is already working on Gen-2 modules that will push efficiency even further. We're committed to making clean energy not just sustainable, but economically superior to fossil fuels.</p>
     `,
     tags: ["Innovation", "Solar Technology", "Efficiency", "R&D"],
-    relatedArticles: [1, 3],
+    relatedArticles: ["1"], // Fixed: use string keys
   },
 };
 
-interface MediaDetailPageProps {
-  params: { id: string };
-}
-
-const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
-  const { id } = params;
-  const article = articlesData[id as keyof typeof articlesData];
+const MediaDetailPage = () => {
+  const params = useParams();
+  const articleId = params.id as string;
+  const article = NEWS_ARTICLES[articleId];
 
   if (!article) {
     return (
@@ -111,7 +122,7 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
             Article Not Found
           </h1>
           <p className="text-soft-blue-gray mb-8">
-            The article you're looking for doesn't exist.
+            The article you&apos;re looking for doesn&apos;t exist.
           </p>
           <Link href="/media">
             <Button className="bg-gold hover:bg-gold/90 text-navy-deep">
@@ -124,29 +135,8 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
   }
 
   return (
-    <main className="min-h-screen bg-white text-navy-deep">
-      {/* Back Button */}
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        className="sticky top-0 z-40 bg-white border-b border-navy-deep/10 px-6 py-4"
-      >
-        <div className="container mx-auto max-w-4xl">
-          <Link
-            href="/media"
-            className="inline-flex items-center gap-2 text-navy-deep font-nunito font-bold hover:text-gold transition-colors group"
-          >
-            <IconArrowLeft
-              size={20}
-              className="group-hover:-translate-x-1 transition-transform"
-            />
-            Back to Media
-          </Link>
-        </div>
-      </motion.div>
-
-      {/* Hero Section */}
-      <section className="relative py-12 px-6 bg-navy-deep overflow-hidden">
+    <main className="min-h-screen bg-white text-navy-deep ">
+      <section className="relative py-12 px-6 bg-navy-deep overflow-hidden pt-30">
         <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none" />
 
         <div className="container mx-auto max-w-4xl relative z-10">
@@ -186,7 +176,7 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="relative h-96 md:h-[500px] overflow-hidden"
+        className="relative h-96 md:h-[500px] overflow-hidden container mx-auto max-w-3xl"
       >
         <img
           src={article.image}
@@ -243,6 +233,7 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
             <button className="p-3 bg-cream/20 rounded-lg hover:bg-gold hover:text-white transition-all duration-300">
               <IconShare2 size={18} />
             </button>
+            {/* Add more share buttons if needed (Twitter, LinkedIn, etc.) */}
           </motion.div>
         </div>
       </section>
@@ -263,8 +254,7 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {article.relatedArticles.map((relatedId, index) => {
-                const relatedArticle =
-                  articlesData[relatedId as keyof typeof articlesData];
+                const relatedArticle = NEWS_ARTICLES[relatedId];
                 if (!relatedArticle) return null;
 
                 return (
@@ -288,7 +278,7 @@ const MediaDetailPage: React.FC<MediaDetailPageProps> = ({ params }) => {
                         {relatedArticle.title}
                       </h3>
                       <p className="text-sm text-soft-blue-gray font-nunito">
-                        {relatedArticle.date}
+                        {relatedArticle.date} • {relatedArticle.readTime}
                       </p>
                     </Link>
                   </motion.div>

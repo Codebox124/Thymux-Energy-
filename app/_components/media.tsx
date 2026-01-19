@@ -1,8 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
-import { IconArrowRight, IconCalendar, IconNews } from "@tabler/icons-react";
-import Image from "next/image";
+import { IconArrowRight, IconCalendar } from "@tabler/icons-react";
+
 import Link from "next/link";
 import {
   Card,
@@ -21,7 +22,7 @@ const mediaItems = [
       "Our new initiative aims to provide sustainable energy solutions to over 50,000 households across the Atlantic region.",
     image:
       "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2075&auto=format&fit=crop",
-    href: "/news/west-africa-expansion",
+    href: "/media/1",
   },
   {
     category: "Innovation",
@@ -31,7 +32,7 @@ const mediaItems = [
       "Our latest photovoltaic technology achieves a 25% increase in energy conversion efficiency in low-light conditions.",
     image:
       "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=2000&auto=format&fit=crop",
-    href: "/news/next-gen-pv",
+    href: "/media/2",
   },
   {
     category: "Events",
@@ -41,7 +42,7 @@ const mediaItems = [
       "Thymux Energy was honored with the 'Sustainable Innovation Award' for our breakthrough in urban solar architecture.",
     image:
       "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop",
-    href: "/news/energy-summit-2026",
+    href: "/media/3",
   },
 ];
 
@@ -57,7 +58,7 @@ const Media = () => {
               viewport={{ once: true }}
               className="flex items-center gap-2 mb-4"
             >
-              <span className="w-12 h-[2px] bg-gold"></span>
+              <span className="w-12 h-0.5 bg-gold"></span>
               <span className="text-gold font-nunito font-bold tracking-widest uppercase text-sm">
                 Media & Insights
               </span>
@@ -77,12 +78,14 @@ const Media = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <Button
-              variant="outline"
-              className="border-gold text-navy-deep hover:bg-gold hover:text-white rounded-full font-nunito font-bold px-6 py-2 h-auto"
-            >
-              View All News <IconArrowRight className="ml-2" />
-            </Button>
+            <Link href="/media/" passHref>
+              <Button
+                variant="outline"
+                className="border-gold fle text-navy-deep hover:bg-gold hover:text-white rounded-full font-nunito font-bold px-6 py-2 h-auto"
+              >
+                View All News <IconArrowRight className="ml-2" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
 
@@ -115,7 +118,7 @@ const Media = () => {
                     {item.title}
                   </h3>
                 </CardHeader>
-                <CardContent className="flex-grow">
+                <CardContent className="grow">
                   <p className="text-soft-blue-gray font-nunito line-clamp-3 leading-relaxed">
                     {item.description}
                   </p>

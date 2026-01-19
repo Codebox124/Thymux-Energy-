@@ -35,11 +35,15 @@ const Navbar = () => {
         { name: "Team", href: "/strategy/team" },
         { name: "Leadership", href: "/strategy/leadership" },
         { name: "Technology", href: "/strategy/technology" },
-        { name: "Finance and Risk Management", href: "/strategy/finance-and-risk-management" },
+        {
+          name: "Finance and Risk Management",
+          href: "/strategy/finance-and-risk-management",
+        },
         { name: "Logistics", href: "/strategy/logistics" },
       ],
     },
     { name: "Projects", href: "/projects" },
+    { name: "Media", href: "/media" },
   ];
 
   return (
@@ -83,7 +87,7 @@ const Navbar = () => {
               >
                 {link.name}
               </Link>
-            )
+            ),
           )}
           <Link
             href="/contact"

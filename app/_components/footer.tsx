@@ -1,15 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  IconBrandFacebook,
-  IconBrandTwitter,
-  IconBrandLinkedin,
-  IconBrandInstagram,
-  IconMail,
-  IconPhone,
-  IconMapPin,
-} from "@tabler/icons-react";
+import { IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
 import Image from "next/image";
 
 const Footer = () => {
@@ -27,22 +19,6 @@ const Footer = () => {
               Pioneering the future of energy with sustainable, reliable, and
               affordable solar solutions for every home and business.
             </p>
-            <div className="flex gap-4">
-              {[
-                IconBrandFacebook,
-                IconBrandTwitter,
-                IconBrandLinkedin,
-                IconBrandInstagram,
-              ].map((Icon, i) => (
-                <Link
-                  key={i}
-                  href="#"
-                  className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-gold hover:text-navy-deep transition-all"
-                >
-                  <Icon size={20} />
-                </Link>
-              ))}
-            </div>
           </div>
 
           {/* Links Column */}

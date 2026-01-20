@@ -33,7 +33,7 @@ const Navbar = () => {
       href: "/strategy",
       subItems: [
         { name: "Team", href: "/strategy/team" },
-        { name: "Leadership", href: "/strategy/leadership" },
+        // { name: "Leadership", href: "/strategy/leadership" },
         { name: "Technology", href: "/strategy/technology" },
         {
           name: "Finance and Risk Management",

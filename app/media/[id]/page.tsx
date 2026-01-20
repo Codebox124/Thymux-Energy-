@@ -136,7 +136,7 @@ const MediaDetailPage = () => {
 
   return (
     <main className="min-h-screen bg-white text-navy-deep ">
-      <section className="relative py-12 px-6 bg-navy-deep overflow-hidden pt-30">
+      <section className="relative py-20 px-6 bg-navy-deep overflow-hidden pt-30">
         <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none" />
 
         <div className="container mx-auto max-w-4xl relative z-10">

@@ -128,7 +128,7 @@ export default function LogisticsPage() {
                         Logistics & <span className="text-gold">Supply Chain</span>
                     </h1>
                     <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        Thymux Energy FZCO leverages world-class infrastructure and strategic partnerships to deliver efficient, reliable logistics solutions for crude oil and refined petroleum products across global markets.
+                        Thymus Energy FZCO leverages world-class infrastructure and strategic partnerships to deliver efficient, reliable logistics solutions for crude oil and refined petroleum products across global markets.
                     </p>
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -240,7 +240,7 @@ export default function LogisticsPage() {
                                 <img
                                     src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop"
                                     alt="Oil tanker and shipping logistics"
-                                    className="w-full h-[500px] object-cover"
+                                    className="w-full h-125 object-cover"
                                 />
                             </div>
                             <div className="absolute -bottom-6 -left-6 bg-[#1b2d42] rounded-xl p-6 shadow-2xl">
@@ -264,7 +264,7 @@ export default function LogisticsPage() {
                                 <img
                                     src="https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2072&auto=format&fit=crop"
                                     alt="Oil storage tanks and infrastructure"
-                                    className="w-full h-[500px] object-cover"
+                                    className="w-full h-125 object-cover"
                                 />
                             </div>
                         </div>
@@ -280,10 +280,10 @@ export default function LogisticsPage() {
                                 Built for <span className="text-gold">Reliability</span>
                             </h2>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-300 mb-6 leading-relaxed">
-                                Our logistics infrastructure is built on strategic partnerships with leading terminal operators, shipping companies, and storage facilities. This network enables us to deliver crude oil and refined products efficiently and reliably.
+                                Thymus Energy operates onshore leased storage tanks in strategic locations including Basra, Iraq, and other key areas across the region. With total storage capacity exceeding 250,000 CBM, we can receive, store, blend, and redistribute full cargoes efficiently.
                             </p>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-400 mb-8 leading-relaxed">
-                                From major export terminals to key import hubs, we maintain 24/7 operational capability to meet the demands of our global trading operations and ensure uninterrupted supply to our clients.
+                                Our in-house fleet of vessels reduces dependency on third-party shipbrokers, lowers costs, and ensures greater control over delivery schedules — enabling rapid inventory access upon order confirmation and faster turnaround times for our clients.
                             </p>
                             <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-400 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0">
                                 <Link
@@ -320,7 +320,7 @@ export default function LogisticsPage() {
                             href="/about"
                             className="inline-flex items-center justify-center gap-2 border-2 border-[#1b2d42] text-[#1b2d42] font-semibold px-8 py-4 rounded-full hover:bg-[#1b2d42] hover:text-white transition-all duration-300"
                         >
-                            About Thymux Energy
+                            About Thymus Energy
                         </Link>
                     </div>
                 </div>

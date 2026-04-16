@@ -75,7 +75,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-sm sm:text-base md:text-lg text-slate-400 max-w-2xl mb-6 md:mb-10 leading-relaxed text-center px-4"
           >
-            Thymus Energy FZCO is a dynamic crude oil and petroleum products trading company, specializing in Fuel Oil, Gas Oil, Gasoline, LPG, Base Oils, and Bitumen across global markets.
+            Thymus Energy FZCO is a dynamic bulk petroleum trading company specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen — with proven blending expertise and 250,000+ CBM of strategic storage.
           </motion.p>
 
           <motion.div

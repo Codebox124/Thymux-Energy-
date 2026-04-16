@@ -10,11 +10,11 @@ export default function Stat() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <section className="py-16 px-6 bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800">
+            <section className="py-16 px-6 bg-linear-to-r from-slate-800 via-slate-700 to-slate-800">
                 <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
                     {[
                         { label: 'Global Regions', value: '5+' },
-                        { label: 'Product Lines', value: '7+' },
+                        { label: 'Product Lines', value: '5+' },
                         { label: 'Years Experience', value: '20+' },
                         { label: 'Cost Leader', value: 'Fuel Oil' },
                     ].map((stat, i) => (
@@ -57,12 +57,11 @@ export default function Stat() {
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {[
-                            { icon: Droplet, title: 'Crude Oils', desc: 'International trading of crude oils from major producing regions' },
-                            { icon: Zap, title: 'Fuel Oil', desc: 'Market-leading cargo blending and lowest cost provision' },
-                            { icon: TrendingUp, title: 'Gas Oil', desc: 'Premium quality gas oil for diverse industrial applications' },
-                            { icon: Droplet, title: 'Gasoline', desc: 'Refined gasoline products meeting international standards' },
-                            { icon: Zap, title: 'LPG', desc: 'Liquefied petroleum gas for commercial and industrial use' },
-                            { icon: TrendingUp, title: 'Base Oils', desc: 'High-grade base oils for lubricant manufacturing' },
+                            { icon: Zap, title: 'Fuel Oil', desc: 'Market-leading cargo blending and lowest-cost provision of premium Fuel Oil grades.' },
+                            { icon: Droplet, title: 'Gas Oil', desc: 'Premium quality Gas Oil for diverse industrial and commercial applications.' },
+                            { icon: TrendingUp, title: 'VGO', desc: 'Vacuum Gas Oil trading connecting refineries and end-users across global markets.' },
+                            { icon: Droplet, title: 'Naphtha', desc: 'Full range Naphtha supply for petrochemical feedstock and blending.' },
+                            { icon: TrendingUp, title: 'Bitumen', desc: 'Consistent Bitumen supply for infrastructure and construction projects worldwide.' },
                         ].map((product, i) => (
                             <motion.div
                                 key={i}
@@ -71,7 +70,7 @@ export default function Stat() {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: i * 0.1 }}
                                 whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-gradient-to-br from-slate-700 to-slate-800 border-2 border-slate-600 p-8 rounded-xl hover:border-amber-400 hover:shadow-xl hover:shadow-amber-500/20 transition-all group"
+                                className="bg-linear-to-br from-slate-700 to-slate-800 border-2 border-slate-600 p-8 rounded-xl hover:border-amber-400 hover:shadow-xl hover:shadow-amber-500/20 transition-all group"
                             >
                                 <motion.div
                                     whileHover={{ rotate: 360 }}

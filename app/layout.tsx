@@ -15,8 +15,8 @@ const nunito = Nunito({
 });
 
 export const metadata: Metadata = {
-  title: "Thymux Energy",
-  description: "Solar and Renewable Energy Solutions",
+  title: "Thymus Energy FZCO",
+  description: "A leading bulk petroleum trading company headquartered in DMCC, Dubai. Specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen across global markets.",
 };
 
 export default function RootLayout({

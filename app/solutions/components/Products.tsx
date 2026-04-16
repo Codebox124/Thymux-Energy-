@@ -5,28 +5,24 @@ import { fromBottomToTop, others } from "./Animations";
 const Products = () => {
   const products = [
     {
-      title: "Crude Oils",
-      description: "International trading of crude oils with flexible sourcing from the Arabian Gulf and key producing regions worldwide."
-    },
-    {
       title: "Fuel Oil",
-      description: "Market-leading cargo blending expertise. Recognized as the lowest cost provider of Fuel Oil in the market."
+      description: "Market-leading cargo blending expertise. Recognized as the lowest-cost provider of premium Fuel Oil grades tailored to exact customer specifications."
     },
     {
-      title: "Gas Oil & Gasoline",
-      description: "Comprehensive supply of middle distillates and motor fuels to meet diverse market demands."
+      title: "Gas Oil",
+      description: "Premium quality Gas Oil for diverse industrial, marine, and commercial applications across global markets."
     },
     {
-      title: "LPG & Asphalt",
-      description: "Reliable trading of liquefied petroleum gas and asphalt for industrial and commercial applications."
+      title: "VGO",
+      description: "Vacuum Gas Oil trading connecting major refineries and end-users. Flexible sourcing from the Arabian Gulf and key producing regions."
     },
     {
-      title: "Base Oils",
-      description: "Premium quality base oils for lubricant manufacturing and industrial use across global markets."
+      title: "Naphtha",
+      description: "Full range Naphtha supply for petrochemical feedstock and blending operations, meeting stringent performance specifications."
     },
     {
       title: "Bitumen",
-      description: "Consistent supply of bitumen for infrastructure and construction projects worldwide."
+      description: "Consistent supply of Bitumen for infrastructure and construction projects worldwide, backed by our strategic storage network."
     }
   ];
 

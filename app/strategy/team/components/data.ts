@@ -19,7 +19,7 @@ export const teamMembers = [
     role: "Head of Operations",
     initials: "HO",
     department: "Logistics",
-    bio: "Orchestrates the movement of 2M+ barrels monthly. Previously managed fleet logistics for a major European carrier. Ensuring the physical reality matches the paper contract.",
+    bio: "Orchestrates the movement of full cargoes across our 250,000+ CBM storage network. Previously managed fleet logistics for a major European carrier. Ensuring the physical reality matches the paper contract.",
     tags: ["Supply Chain", "Fleet Mgmt", "Quality Control"],
   },
   {

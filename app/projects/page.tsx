@@ -43,58 +43,58 @@ function useIntersectionObserver() {
 
 const operations = [
     {
-        icon: Droplets,
-        title: "Brent Crude Trading",
-        location: "North Sea - Europe",
-        volume: "500K bbl/month",
-        description: "Strategic trading of Brent crude oil from North Sea producers, ensuring reliable supply chains to refineries worldwide.",
-        status: "Active",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
-    },
-    {
-        icon: Ship,
-        title: "WTI Crude Operations",
-        location: "USA - Gulf Coast",
-        volume: "750K bbl/month",
-        description: "Premium West Texas Intermediate crude oil trading with direct access to major Gulf Coast terminals and refineries.",
+        icon: Fuel,
+        title: "Fuel Oil Blending",
+        location: "Arabian Gulf",
+        volume: "Spot & Term",
+        description: "Market-leading cargo blending operations delivering premium Fuel Oil grades tailored to exact customer specifications — recognized as the lowest-cost provider in the region.",
         status: "Active",
         image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2000&auto=format&fit=crop",
     },
     {
-        icon: Fuel,
-        title: "Diesel & Gasoil",
-        location: "Middle East",
-        volume: "300K MT/month",
-        description: "High-volume trading of ultra-low sulfur diesel and gasoil products serving marine, industrial, and commercial sectors.",
-        status: "Operational",
+        icon: Droplets,
+        title: "Gas Oil Supply",
+        location: "UAE & Region",
+        volume: "Spot & Term",
+        description: "Premium Gas Oil trading for diverse industrial, marine, and commercial sectors across the UAE and the wider Gulf region.",
+        status: "Active",
         image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2000&auto=format&fit=crop",
     },
     {
         icon: Factory,
-        title: "Jet Fuel Supply",
-        location: "Asia-Pacific",
-        volume: "200K MT/month",
-        description: "Specialized aviation fuel trading supporting major airports and airlines across the Asia-Pacific region.",
+        title: "VGO Trading",
+        location: "Global Markets",
+        volume: "Full Cargoes",
+        description: "Vacuum Gas Oil sourcing and distribution connecting major refineries and industrial end-users across global markets.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
     },
     {
         icon: Droplets,
-        title: "LPG Trading Hub",
-        location: "Global",
-        volume: "150K MT/month",
-        description: "Liquefied petroleum gas trading operations connecting producers to distributors across multiple continents.",
-        status: "Development",
+        title: "Naphtha Supply",
+        location: "Asia-Pacific & Europe",
+        volume: "Full Range",
+        description: "Full range Naphtha supply for petrochemical feedstock and blending, meeting stringent performance and environmental requirements.",
+        status: "Active",
         image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000&auto=format&fit=crop",
     },
     {
         icon: Ship,
-        title: "Marine Bunker Fuel",
-        location: "Singapore Hub",
-        volume: "400K MT/month",
-        description: "Strategic bunker fuel operations serving the world's busiest maritime routes and major shipping companies.",
+        title: "Bitumen Trading",
+        location: "Middle East & Global",
+        volume: "Full Cargoes",
+        description: "Consistent Bitumen supply for infrastructure and construction projects worldwide, backed by strategic storage capacity exceeding 250,000 CBM.",
         status: "Active",
         image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2000&auto=format&fit=crop",
+    },
+    {
+        icon: Ship,
+        title: "Marine Fuel Solutions",
+        location: "Arabian Gulf",
+        volume: "Spot & Term",
+        description: "Comprehensive fuel supply and tailored logistics services for ship operators globally, backed by our in-house fleet and 250,000+ CBM storage network.",
+        status: "Active",
+        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop",
     },
 ]
 
@@ -155,7 +155,7 @@ export default function ProjectsPage() {
                         Our <span className="text-gold">Trading Operations</span>
                     </h1>
                     <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                        Thymux Energy FZCO is your trusted partner in international oil and gas trading. We specialize in crude oils and refined petroleum products, connecting global markets with reliability and transparency.
+                        Thymus Energy FZCO is your trusted partner in international oil and gas trading. We specialize in crude oils and refined petroleum products, connecting global markets with reliability and transparency.
                     </p>
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
@@ -338,7 +338,7 @@ export default function ProjectsPage() {
                                 Driving Global <span className="text-gold">Energy Markets</span>
                             </h2>
                             <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-600 mb-8 leading-relaxed">
-                                Since our establishment in 2025, Thymux Energy FZCO has rapidly positioned itself as a dynamic player in international oil and gas trading. We connect producers with end-users through reliable supply chains and transparent operations.
+                                Since our establishment in 2025, Thymus Energy FZCO has rapidly positioned itself as a dynamic player in international oil and gas trading. We connect producers with end-users through reliable supply chains and transparent operations.
                             </p>
 
                             <div className="space-y-4">
@@ -372,7 +372,7 @@ export default function ProjectsPage() {
                         Partner With a <span className="text-gold">Trusted Trader</span>
                     </h2>
                     <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                        Whether you're a producer, refinery, trading house, or end-user, Thymux Energy FZCO offers reliable trading solutions backed by transparency and operational excellence.
+                        Whether you're a producer, refinery, trading house, or end-user, Thymus Energy FZCO offers reliable trading solutions backed by transparency and operational excellence.
                     </p>
                     <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 flex flex-col sm:flex-row gap-4 justify-center">
                         <Link

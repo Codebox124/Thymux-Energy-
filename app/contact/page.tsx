@@ -71,8 +71,8 @@ export default function ContactPage() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-lg text-gray-300 mb-6 max-w-2xl mx-auto text-balance leading-relaxed"
             >
-              Have questions about our solar solutions? We&apos;re here to help
-              you transition to clean, renewable energy.
+              Have a trading inquiry or partnership opportunity? We&apos;re here
+              to help you navigate global petroleum markets.
             </motion.p>
           </div>
         </div>
@@ -168,7 +168,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-[#3a4e68] rounded-lg bg-[#2d4454] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold"
-                    placeholder="Solar Installation Inquiry"
+                    placeholder="Trading Inquiry"
                   />
                 </div>
 
@@ -187,7 +187,7 @@ export default function ContactPage() {
                     required
                     rows={5}
                     className="w-full px-4 py-3 border border-[#3a4e68] rounded-lg bg-[#2d4454] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold resize-none"
-                    placeholder="Tell us about your solar energy needs..."
+                    placeholder="Tell us about your trading or supply requirements..."
                   />
                 </div>
 
@@ -216,11 +216,13 @@ export default function ContactPage() {
                     Office Address
                   </h3>
                   <p className="text-gray-300 leading-relaxed">
-                    123 Solar Avenue
+                    Jumeirah Bay X2 Tower, Office 3709
                     <br />
-                    San Francisco, CA 94102
+                    Cluster X, Jumeirah Lake Towers (JLT)
                     <br />
-                    United States
+                    PO Box: 72045, DMCC
+                    <br />
+                    Dubai, United Arab Emirates
                   </p>
                 </div>
               </div>
@@ -232,10 +234,10 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-white mb-2">Phone</h3>
                   <p className="text-gray-300">
                     <a
-                      href="tel:+14155551234"
+                      href="tel:+97145660071"
                       className="hover:text-gold transition-colors"
                     >
-                      +1 (xxx) yyy-zzzz
+                      +971 4 566 0071
                     </a>
                   </p>
                 </div>
@@ -248,10 +250,10 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-white mb-2">Email</h3>
                   <p className="text-gray-300">
                     <a
-                      href="mailto:hello@thymux.energy"
+                      href="mailto:trading@thymus-energy.com"
                       className="hover:text-gold transition-colors"
                     >
-                      hello@thymux.energy
+                      trading@thymus-energy.com
                     </a>
                   </p>
                 </div>
@@ -283,7 +285,7 @@ export default function ContactPage() {
           </h2>
           <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg border border-[#3a4e68]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0193878151636!2d-122.39761692346901!3d37.78994517106156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f47b1%3A0x640d88226dbd4deb!2s123%20Solar%20Ave%2C%20San%20Francisco%2C%20CA%2094102!5e0!3m2!1sen!2sus!4v1234567890"
+              src="https://www.google.com/maps?q=Jumeirah+Bay+X2+Tower+Cluster+X+JLT+DMCC+Dubai+UAE&output=embed"
               width="100%"
               height="100%"
               style={{ border: 0 }}

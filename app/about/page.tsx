@@ -135,11 +135,11 @@ export default function AboutUsPage() {
               >
                 <p>
                   Thymus Energy FZCO is a newly established, dynamic, and
-                  forward-thinking oil and gas trading company officially
-                  launched in 2025. Benefiting from world-class infrastructure
-                  and seamless access to global markets, we specialize in the
-                  international trading of crude oils and a comprehensive
-                  portfolio of refined petroleum products.
+                  forward-thinking bulk petroleum trading company officially
+                  launched in 2025. Headquartered in DMCC, Dubai, we specialize
+                  in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen — with
+                  proven expertise in cargo blending and a storage capacity
+                  exceeding 250,000 CBM across strategic locations.
                 </p>
                 <p className="mt-6 md:mt-8">
                   With a sharp focus on reliability, transparency, and
@@ -204,13 +204,11 @@ export default function AboutUsPage() {
 
           <div className="md:hidden space-y-3">
             {[
-              "Crude Oils",
               "Fuel Oil",
               "Gas Oil",
-              "Gasoline",
-              "LPG",
-              "Asphalt / Bitumen",
-              "Base Oils",
+              "VGO",
+              "Naphtha",
+              "Bitumen",
             ].map((item, index) => (
               <motion.div
                 key={item}
@@ -237,13 +235,11 @@ export default function AboutUsPage() {
 
           <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-px bg-neutral-200 overflow-hidden rounded-sm border border-neutral-200">
             {[
-              "Crude Oils",
               "Fuel Oil",
               "Gas Oil",
-              "Gasoline",
-              "LPG",
-              "Asphalt / Bitumen",
-              "Base Oils",
+              "VGO",
+              "Naphtha",
+              "Bitumen",
             ].map((item, index) => (
               <motion.div
                 key={item}
@@ -265,7 +261,6 @@ export default function AboutUsPage() {
               </motion.div>
             ))}
 
-            <div className="hidden lg:block bg-white"></div>
             <div className="hidden lg:block bg-white"></div>
           </div>
         </div>
@@ -308,10 +303,11 @@ export default function AboutUsPage() {
                   Strategic Sourcing
                 </h2>
                 <p className="text-soft-blue-gray text-base md:text-lg font-light leading-relaxed">
-                  Our flexible sourcing capabilities allow us to secure
-                  competitive cargoes from the Arabian Gulf and other key
-                  producing regions. We leverage strong relationships with major
-                  oil producers and national oil companies.
+                  Located along one of the busiest shipping routes in the
+                  Arabian Gulf, we leverage strong relationships with major
+                  refineries and national oil companies to secure competitive
+                  cargoes. Our in-house fleet of vessels gives us direct control
+                  over delivery schedules and costs.
                 </p>
               </motion.div>
 
@@ -322,10 +318,11 @@ export default function AboutUsPage() {
                   Logistics & Finance
                 </h2>
                 <p className="text-soft-blue-gray text-base md:text-lg font-light leading-relaxed">
-                  Through strategic alliances with leading shipping companies,
-                  inspection agencies, and financial institutions, we ensure the
-                  smooth and secure execution of every deal. Our team combines
-                  decades of experience in risk management and shipping.
+                  We maintain onshore leased storage tanks in strategic
+                  locations including Basra, Iraq, with total capacity exceeding
+                  250,000 CBM. This enables rapid inventory access, flexible
+                  delivery options, and lower operational costs for discharging,
+                  blending, and loading.
                 </p>
               </motion.div>
             </motion.div>

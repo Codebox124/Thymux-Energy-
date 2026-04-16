@@ -16,8 +16,9 @@ const Footer = () => {
               <Image src={"/logo.jpeg"} alt="logo" width={100} height={100} />
             </Link>
             <p className="text-cream/50 font-nunito leading-relaxed">
-              Pioneering the future of energy with sustainable, reliable, and
-              affordable solar solutions for every home and business.
+              A trusted bulk petroleum trading company headquartered in DMCC,
+              Dubai — delivering quality, reliability, and competitive pricing
+              across global energy markets.
             </p>
           </div>
 
@@ -77,28 +78,28 @@ const Footer = () => {
             </h4>
             <ul className="space-y-4 font-nunito text-cream/60">
               <li>
-                <Link href="#" className="hover:text-gold transition-colors">
-                  Residential Solar
+                <Link href="/solutions" className="hover:text-gold transition-colors">
+                  Fuel Oil
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gold transition-colors">
-                  Commercial Installation
+                <Link href="/solutions" className="hover:text-gold transition-colors">
+                  Gas Oil
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gold transition-colors">
-                  Battery Storage
+                <Link href="/solutions" className="hover:text-gold transition-colors">
+                  VGO
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gold transition-colors">
-                  Smart Monitoring
+                <Link href="/solutions" className="hover:text-gold transition-colors">
+                  Naphtha
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gold transition-colors">
-                  Maintenance Services
+                <Link href="/solutions" className="hover:text-gold transition-colors">
+                  Bitumen
                 </Link>
               </li>
             </ul>
@@ -112,22 +113,22 @@ const Footer = () => {
             <ul className="space-y-4 font-nunito text-cream/60">
               <li className="flex gap-3">
                 <IconMail className="text-gold shrink-0" size={20} />
-                <span>hello@thymux.energy</span>
+                <span>trading@thymus-energy.com</span>
               </li>
               <li className="flex gap-3">
                 <IconPhone className="text-gold shrink-0" size={20} />
-                <span>+1 (555) 123-4567</span>
+                <span>+971 4 566 0071</span>
               </li>
               <li className="flex gap-3">
                 <IconMapPin className="text-gold shrink-0" size={20} />
-                <span>123 Solar Way, Energy City, ST 90210</span>
+                <span>Jumeirah Bay X2 Tower, Office 3709, Cluster X, JLT, DMCC, Dubai, UAE</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:row justify-between items-center gap-4 text-cream/40 font-nunito text-sm">
-          <p>© {currentYear} Thymux Energy Inc. All rights reserved.</p>
+          <p>© {currentYear} Thymus Energy FZCO. All rights reserved.</p>
           <div className="flex gap-8">
             <Link href="#" className="hover:text-gold">
               Privacy Policy

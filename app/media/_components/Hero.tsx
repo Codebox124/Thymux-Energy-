@@ -32,7 +32,7 @@ const Hero = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl md:text-6xl lg:text-7xl font-sora font-bold text-white mb-6 leading-tight"
           >
-            Stay Updated with <span className="text-gold">Thymux Energy</span>
+            Stay Updated with <span className="text-gold">Thymus Energy</span>
           </motion.h1>
 
           <motion.p
@@ -41,9 +41,9 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-lg md:text-xl text-soft-blue-gray max-w-3xl mx-auto leading-relaxed"
           >
-            Discover the latest news, press releases, innovation announcements,
-            and industry insights from Thymux Energy. Follow our journey as we
-            revolutionize renewable energy solutions.
+            Discover the latest news, press releases, market insights, and
+            industry updates from Thymus Energy FZCO — one of the Gulf region's
+            leading bulk petroleum trading companies.
           </motion.p>
         </motion.div>
       </div>

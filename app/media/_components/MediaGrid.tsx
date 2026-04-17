@@ -16,34 +16,34 @@ const mediaItems = [
   {
     id: 1,
     category: "Press Release",
-    title: "Thymux Energy Expands Solar Operations to West Africa",
+    title: "Thymus Energy FZCO Expands Storage Capacity in Basra, Iraq",
     date: "Jan 12, 2026",
     description:
-      "Our new initiative aims to provide sustainable energy solutions to over 50,000 households across the Atlantic region.",
+      "Thymus Energy strengthens its regional infrastructure with expanded onshore storage operations in Basra, supporting faster cargo turnaround and greater supply flexibility across the Gulf.",
     image:
-      "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2075&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2075&auto=format&fit=crop",
     href: "/media/1",
     featured: true,
   },
   {
     id: 2,
     category: "Innovation",
-    title: "Introducing Next-Gen High Efficiency PV Modules",
+    title: "Advanced Cargo Blending: Thymus Energy's Competitive Edge",
     date: "Jan 05, 2026",
     description:
-      "Our latest photovoltaic technology achieves a 25% increase in energy conversion efficiency in low-light conditions.",
+      "How our in-house blending expertise enables us to deliver premium Fuel Oil grades tailored to exact customer specifications — consistently at the lowest cost in the market.",
     image:
-      "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
     href: "/media/2",
     featured: true,
   },
   {
     id: 3,
     category: "Events",
-    title: "Global Renewable Energy Summit 2026",
+    title: "Arabian Gulf Energy Forum 2026",
     date: "Dec 20, 2025",
     description:
-      "Thymux Energy was honored with the 'Sustainable Innovation Award' for our breakthrough in urban solar architecture.",
+      "Thymus Energy participated in the Arabian Gulf Energy Forum, reinforcing partnerships with major refineries, ship operators, and trading houses across the region.",
     image:
       "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop",
     href: "/media/3",
@@ -52,10 +52,10 @@ const mediaItems = [
   {
     id: 4,
     category: "News",
-    title: "Partnership with Global Energy Leaders",
+    title: "Thymus Energy Strengthens Ties with Key Gulf Refineries",
     date: "Dec 10, 2025",
     description:
-      "Thymux Energy announces strategic partnership with leading international renewable energy companies to accelerate innovation.",
+      "Thymus Energy announces deepened supply agreements with major refineries across the Arabian Gulf, securing long-term access to Fuel Oil, Gas Oil, and VGO cargoes.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
     href: "/media/4",
@@ -64,10 +64,10 @@ const mediaItems = [
   {
     id: 5,
     category: "Innovation",
-    title: "AI-Powered Energy Management System Launch",
+    title: "Digital Trading Platforms: Enhancing Transparency in Petroleum Markets",
     date: "Dec 01, 2025",
     description:
-      "We unveil our new machine learning platform that optimizes energy distribution and reduces waste by up to 30%.",
+      "Thymus Energy continues to invest in advanced trading platforms that enhance efficiency, market transparency, and real-time cargo tracking for clients across global markets.",
     image:
       "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?q=80&w=2070&auto=format&fit=crop",
     href: "/media/5",
@@ -76,12 +76,12 @@ const mediaItems = [
   {
     id: 6,
     category: "Events",
-    title: "Sustainability Conference 2026 Announcement",
+    title: "DMCC Energy Week 2025 — Thymus Energy's Role in Global Trade",
     date: "Nov 25, 2025",
     description:
-      "Join us at the largest renewable energy conference where industry experts discuss the future of sustainable energy.",
+      "At DMCC Energy Week, Thymus Energy showcased its infrastructure, blending capabilities, and vision as a total solutions provider for ship operators and industrial clients worldwide.",
     image:
-      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop",
     href: "/media/6",
     featured: false,
   },

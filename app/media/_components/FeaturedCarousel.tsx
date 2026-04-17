@@ -8,35 +8,35 @@ import Link from "next/link";
 const featuredArticles = [
   {
     id: 1,
-    title: "The Future of Solar Energy: Innovations 2026",
+    title: "Thymus Energy's Blending Expertise: The Lowest-Cost Fuel Oil Provider",
     excerpt:
-      "Discover the cutting-edge technologies shaping the future of solar energy and renewable power generation.",
-    author: "Dr. James Mitchell",
+      "An inside look at how Thymus Energy's cargo blending capabilities deliver premium Fuel Oil grades at the most competitive prices in the Arabian Gulf market.",
+    author: "Thymus Energy Trading Desk",
     readTime: "5 min read",
     image:
-      "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2075&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2075&auto=format&fit=crop",
     href: "/media/1",
   },
   {
     id: 2,
-    title: "Sustainability in Energy Trading",
+    title: "Strategic Infrastructure: Our 250,000 CBM Storage Network",
     excerpt:
-      "How Thymux Energy is revolutionizing energy trading with sustainable and ethical practices.",
-    author: "Sarah Chen",
+      "How Thymus Energy's onshore storage facilities across the Arabian Gulf — including Basra, Iraq — deliver speed, flexibility, and cost efficiency to our clients.",
+    author: "Thymus Energy Operations",
     readTime: "7 min read",
     image:
-      "https://images.unsplash.com/photo-1548337138-e87d889cc369?q=80&w=2000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
     href: "/media/2",
   },
   {
     id: 3,
-    title: "Global Energy Distribution Network",
+    title: "Global Petroleum Markets 2026: Opportunities in the Arabian Gulf",
     excerpt:
-      "Connecting renewable energy producers with consumers through our advanced distribution infrastructure.",
-    author: "Michael Torres",
+      "A market outlook on Fuel Oil, Gas Oil, VGO, and Naphtha trading dynamics across the Gulf region and how Thymus Energy is positioned to capitalize.",
+    author: "Thymus Energy Research",
     readTime: "6 min read",
     image:
-      "https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2070&auto=format&fit=crop",
     href: "/media/3",
   },
 ];

@@ -10,7 +10,7 @@ const Capabilities = () => {
     },
     {
       title: "Cargo Optimization Tools",
-      description: "Advanced blending calculators and specification matching systems that identify optimal cargo compositions for fuel oil and other products."
+      description: "Advanced handling calculators and specification matching systems that identify optimal cargo compositions for fuel oil and other products."
     },
     {
       title: "Risk Management Systems",

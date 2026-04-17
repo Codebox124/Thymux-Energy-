@@ -28,10 +28,10 @@ const mediaItems = [
   {
     id: 2,
     category: "Innovation",
-    title: "Advanced Cargo Blending: Thymus Energy's Competitive Edge",
+    title: "Advanced Cargo Handling: Thymus Energy's Competitive Edge",
     date: "Jan 05, 2026",
     description:
-      "How our in-house blending expertise enables us to deliver premium Fuel Oil grades tailored to exact customer specifications — consistently at the lowest cost in the market.",
+      "How our in-house handling expertise enables us to deliver premium Fuel Oil grades tailored to exact customer specifications — consistently at the lowest cost in the market.",
     image:
       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
     href: "/media/2",
@@ -79,7 +79,7 @@ const mediaItems = [
     title: "DMCC Energy Week 2025 — Thymus Energy's Role in Global Trade",
     date: "Nov 25, 2025",
     description:
-      "At DMCC Energy Week, Thymus Energy showcased its infrastructure, blending capabilities, and vision as a total solutions provider for ship operators and industrial clients worldwide.",
+      "At DMCC Energy Week, Thymus Energy showcased its infrastructure, handling capabilities, and vision as a total solutions provider for ship operators and industrial clients worldwide.",
     image:
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop",
     href: "/media/6",

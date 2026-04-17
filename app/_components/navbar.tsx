@@ -32,8 +32,6 @@ const Navbar = () => {
       name: "Our Strategy",
       href: "/strategy",
       subItems: [
-        { name: "Team", href: "/strategy/team" },
-        // { name: "Leadership", href: "/strategy/leadership" },
         { name: "Technology", href: "/strategy/technology" },
         {
           name: "Finance and Risk Management",
@@ -56,7 +54,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group">
-          <Image src={"/logo.jpeg"} alt="logo" width={100} height={100} />
+          <Image src={"/logo.png"} alt="logo" width={150} height={150} />
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>

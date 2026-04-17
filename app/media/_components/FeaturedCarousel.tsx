@@ -8,9 +8,9 @@ import Link from "next/link";
 const featuredArticles = [
   {
     id: 1,
-    title: "Thymus Energy's Blending Expertise: The Lowest-Cost Fuel Oil Provider",
+    title: "Thymus Energy's Handling Expertise: The Lowest-Cost Fuel Oil Provider",
     excerpt:
-      "An inside look at how Thymus Energy's cargo blending capabilities deliver premium Fuel Oil grades at the most competitive prices in the Arabian Gulf market.",
+      "An inside look at how Thymus Energy's cargo handling capabilities deliver premium Fuel Oil grades at the most competitive prices in the Arabian Gulf market.",
     author: "Thymus Energy Trading Desk",
     readTime: "5 min read",
     image:

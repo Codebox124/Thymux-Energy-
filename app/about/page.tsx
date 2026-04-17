@@ -138,7 +138,7 @@ export default function AboutUsPage() {
                   forward-thinking bulk petroleum trading company officially
                   launched in 2025. Headquartered in DMCC, Dubai, we specialize
                   in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen — with
-                  proven expertise in cargo blending and a storage capacity
+                  proven expertise in cargo handling and a storage capacity
                   exceeding 250,000 CBM across strategic locations.
                 </p>
                 <p className="mt-6 md:mt-8">
@@ -171,10 +171,10 @@ export default function AboutUsPage() {
                 <div className="relative z-10">
                   <h3 className="text-gold font-medium text-xl md:text-2xl mb-4 md:mb-6 flex items-center gap-3">
                     <span className="w-6 md:w-8 h-[1px] bg-gold"></span>
-                    Market Edge: Blending Expertise
+                    Market Edge: Handling Expertise
                   </h3>
                   <p className="text-white/80 text-base md:text-lg leading-relaxed font-light max-w-xl">
-                    Thymus Energy possesses strong expertise in cargo blending
+                    Thymus Energy possesses strong expertise in cargo handling
                     activity, particularly for Fuel Oil. We are recognized in
                     the market as the{" "}
                     <span className="text-white font-semibold border-b border-gold/50 pb-0.5">
@@ -322,7 +322,7 @@ export default function AboutUsPage() {
                   locations including Basra, Iraq, with total capacity exceeding
                   250,000 CBM. This enables rapid inventory access, flexible
                   delivery options, and lower operational costs for discharging,
-                  blending, and loading.
+                  handling, and loading.
                 </p>
               </motion.div>
             </motion.div>

@@ -15,7 +15,6 @@ import {
     BarChart3,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 function useIntersectionObserver() {
     const ref = useRef<HTMLDivElement>(null)
@@ -44,10 +43,10 @@ function useIntersectionObserver() {
 const operations = [
     {
         icon: Fuel,
-        title: "Fuel Oil Blending",
+        title: "Fuel Oil Trading",
         location: "Arabian Gulf",
         volume: "Spot & Term",
-        description: "Market-leading cargo blending operations delivering premium Fuel Oil grades tailored to exact customer specifications — recognized as the lowest-cost provider in the region.",
+        description: "Market-leading cargo handling operations delivering premium Fuel Oil grades tailored to exact customer specifications — recognized as the lowest-cost provider in the region.",
         status: "Active",
         image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2000&auto=format&fit=crop",
     },
@@ -74,7 +73,7 @@ const operations = [
         title: "Naphtha Supply",
         location: "Asia-Pacific & Europe",
         volume: "Full Range",
-        description: "Full range Naphtha supply for petrochemical feedstock and blending, meeting stringent performance and environmental requirements.",
+        description: "Full range Naphtha supply for petrochemical feedstock and handling, meeting stringent performance and environmental requirements.",
         status: "Active",
         image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000&auto=format&fit=crop",
     },

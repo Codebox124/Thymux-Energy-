@@ -29,7 +29,7 @@ const mediaItems = [
     title: "Advanced Cargo Blending: Thymus Energy's Competitive Edge",
     date: "Jan 05, 2026",
     description:
-      "How our in-house blending expertise enables us to deliver premium Fuel Oil grades tailored to exact customer specifications — consistently at the lowest cost in the market.",
+      "How our in-house handling expertise enables us to deliver premium Fuel Oil grades tailored to exact customer specifications — consistently at the lowest cost in the market.",
     image:
       "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
     href: "/media/2",

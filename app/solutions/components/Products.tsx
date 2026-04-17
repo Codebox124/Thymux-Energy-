@@ -6,7 +6,7 @@ const Products = () => {
   const products = [
     {
       title: "Fuel Oil",
-      description: "Market-leading cargo blending expertise. Recognized as the lowest-cost provider of premium Fuel Oil grades tailored to exact customer specifications."
+      description: "Market-leading cargo handling expertise. Recognized as the lowest-cost provider of premium Fuel Oil grades tailored to exact customer specifications."
     },
     {
       title: "Gas Oil",
@@ -18,7 +18,7 @@ const Products = () => {
     },
     {
       title: "Naphtha",
-      description: "Full range Naphtha supply for petrochemical feedstock and blending operations, meeting stringent performance specifications."
+      description: "Full range Naphtha supply for petrochemical feedstock and handling operations, meeting stringent performance specifications."
     },
     {
       title: "Bitumen",

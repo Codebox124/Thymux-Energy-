@@ -9,7 +9,7 @@ export const leadership = [
     role: "Head of Trading",
     initials: "HT",
     id: "02",
-    bio: "Knows fuel oil blending economics like the back of his hand. Connected across APAC. Doesn't do fluff.",
+    bio: "Knows fuel oil handling economics like the back of his hand. Connected across APAC. Doesn't do fluff.",
   },
 ];
 

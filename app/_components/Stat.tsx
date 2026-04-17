@@ -57,10 +57,10 @@ export default function Stat() {
 
                     <div className="grid md:grid-cols-3 gap-6">
                         {[
-                            { icon: Zap, title: 'Fuel Oil', desc: 'Market-leading cargo blending and lowest-cost provision of premium Fuel Oil grades.' },
+                            { icon: Zap, title: 'Fuel Oil', desc: 'Market-leading cargo handling and lowest-cost provision of premium Fuel Oil grades.' },
                             { icon: Droplet, title: 'Gas Oil', desc: 'Premium quality Gas Oil for diverse industrial and commercial applications.' },
                             { icon: TrendingUp, title: 'VGO', desc: 'Vacuum Gas Oil trading connecting refineries and end-users across global markets.' },
-                            { icon: Droplet, title: 'Naphtha', desc: 'Full range Naphtha supply for petrochemical feedstock and blending.' },
+                            { icon: Droplet, title: 'Naphtha', desc: 'Full range Naphtha supply for petrochemical feedstock and handling.' },
                             { icon: TrendingUp, title: 'Bitumen', desc: 'Consistent Bitumen supply for infrastructure and construction projects worldwide.' },
                         ].map((product, i) => (
                             <motion.div

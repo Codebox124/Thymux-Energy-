@@ -2,6 +2,7 @@
 
 import { motion, easeOut } from "framer-motion";
 import { Globe, Shield, TrendingUp, Zap } from "lucide-react";
+import Link from "next/link";
 
 const Hero = () => {
   const containerVariants = {
@@ -75,7 +76,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-sm sm:text-base md:text-lg text-slate-400 max-w-2xl mb-6 md:mb-10 leading-relaxed text-center px-4"
           >
-            Thymus Energy FZCO is a dynamic bulk petroleum trading company specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen — with proven blending expertise and 250,000+ CBM of strategic storage.
+            Thymus Energy FZCO is a dynamic bulk petroleum trading company specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen — with proven handling expertise and 250,000+ CBM of strategic storage.
           </motion.p>
 
           <motion.div
@@ -108,44 +109,56 @@ const Hero = () => {
             {
               icon: Zap,
               title: "Market Leader",
-              description: "Recognized as the lowest cost provider of Fuel Oil with expert cargo blending capabilities.",
+              description: "Recognized as the lowest cost provider of Fuel Oil with expert cargo handling capabilities.",
+              href: "/projects",
+              external: false,
             },
             {
               icon: Globe,
               title: "Global Reach",
               description: "Operating across Middle East, Asia-Pacific, Africa, Europe with strong producer relationships.",
+              href: "https://www.google.com/maps?q=Jumeirah+Bay+X2+Tower+Cluster+X+JLT+DMCC+Dubai+UAE",
+              external: true,
             },
             {
               icon: Shield,
               title: "Full Compliance",
               description: "Strict adherence to UN, EU, UK, Swiss, and US sanctions regimes with robust due diligence.",
+              href: "/compliance-policy.pdf",
+              external: true,
             },
           ].map((feature, index) => (
-            <motion.div
+            <Link
               key={index}
-              variants={featureVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.15 }}
-              className="flex items-start gap-3 md:gap-4 bg-white/5 md:bg-transparent p-4 md:p-0 rounded-xl md:rounded-none backdrop-blur-sm md:backdrop-blur-none border border-white/5 md:border-0"
+              href={feature.href}
+              target={feature.external ? "_blank" : undefined}
+              rel={feature.external ? "noopener noreferrer" : undefined}
             >
               <motion.div
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-                className="p-2 md:p-3 bg-amber-500/10 rounded-xl flex-shrink-0"
+                variants={featureVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15 }}
+                className="flex items-start gap-3 md:gap-4 bg-white/5 md:bg-transparent p-4 md:p-0 rounded-xl md:rounded-none backdrop-blur-sm md:backdrop-blur-none border border-white/5 md:border-0 hover:border-amber-500/30 transition-colors cursor-pointer"
               >
-                <feature.icon className="text-amber-500" size={24} />
+                <motion.div
+                  whileHover={{ rotate: 360 }}
+                  transition={{ duration: 0.6 }}
+                  className="p-2 md:p-3 bg-amber-500/10 rounded-xl flex-shrink-0"
+                >
+                  <feature.icon className="text-amber-500" size={24} />
+                </motion.div>
+                <div>
+                  <h3 className="text-white font-bold text-base md:text-xl mb-1 md:mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
               </motion.div>
-              <div>
-                <h3 className="text-white font-bold text-base md:text-xl mb-1 md:mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            </motion.div>
+            </Link>
           ))}
         </div>
       </div>

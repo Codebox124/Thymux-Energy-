@@ -18,7 +18,7 @@ export default function ExpertiseSection() {
                             <div className="space-y-4">
                                 {[
                                     'Lowest cost provider of Fuel Oil',
-                                    'Expert cargo blending capabilities',
+                                    'Expert cargo handling capabilities',
                                     'Strategic alliances with major producers',
                                     'Advanced digital trading platforms',
                                     'Comprehensive market intelligence',

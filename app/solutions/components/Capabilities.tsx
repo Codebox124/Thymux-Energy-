@@ -17,8 +17,8 @@ const Capabilities = () => {
     },
     {
       icon: Target,
-      title: "Cargo Blending",
-      description: "Strong expertise in fuel oil blending, positioning us as the market's lowest cost provider."
+      title: "Cargo Handling",
+      description: "Strong expertise in fuel oil handling, positioning us as the market's lowest cost provider."
     },
     {
       icon: Zap,

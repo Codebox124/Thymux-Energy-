@@ -45,7 +45,7 @@ const logisticsServices = [
         icon: Ship,
         title: "Maritime Logistics",
         description:
-            "Strategic partnerships with vessel operators and shipping companies ensuring reliable crude oil and petroleum product transportation across global routes.",
+            "Strategic partnerships with vessel operators and shipping companies ensuring reliable petroleum product transportation across global routes.",
     },
     {
         icon: Warehouse,
@@ -279,11 +279,8 @@ export default function LogisticsPage() {
                             <h2 className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-100 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-3xl md:text-4xl font-bold text-white mb-6">
                                 Built for <span className="text-gold">Reliability</span>
                             </h2>
-                            <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-300 mb-6 leading-relaxed">
-                                Thymus Energy operates onshore leased storage tanks in strategic locations including Basra, Iraq, and other key areas across the region. With total storage capacity exceeding 250,000 CBM, we can receive, store, blend, and redistribute full cargoes efficiently.
-                            </p>
-                            <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-300 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-400 mb-8 leading-relaxed">
-                                Our in-house fleet of vessels reduces dependency on third-party shipbrokers, lowers costs, and ensures greater control over delivery schedules — enabling rapid inventory access upon order confirmation and faster turnaround times for our clients.
+                            <p className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-200 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0 text-gray-300 mb-8 leading-relaxed">
+                                Thymus Energy operates onshore leased storage tanks in strategic locations including Basra, Iraq. With total storage capacity exceeding 250,000 CBM, we can receive, store, and redistribute full cargoes efficiently.
                             </p>
                             <div className="animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 delay-400 ease-out [&.animate-in]:opacity-100 [&.animate-in]:translate-y-0">
                                 <Link

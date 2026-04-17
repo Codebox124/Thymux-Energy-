@@ -47,7 +47,7 @@ const Hero = () => (
           delay: 0.6
         }}
         className="text-xl text-cream/70 mb-8 leading-relaxed">
-          Thymus Energy FZCO is a leading bulk petroleum trading company specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen. Headquartered in DMCC, Dubai, we connect refineries and end-users across global markets with blending expertise and over 250,000 CBM of strategic storage.
+          Thymus Energy FZCO is a leading bulk petroleum trading company specializing in Fuel Oil, Gas Oil, VGO, Naphtha, and Bitumen. Headquartered in DMCC, Dubai, we connect refineries and end-users across global markets with handling expertise and over 250,000 CBM of strategic storage.
         </motion.p> 
         <motion.div
             initial={fromBottomToTop.initial}

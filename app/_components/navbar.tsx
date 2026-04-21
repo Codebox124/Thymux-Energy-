@@ -54,7 +54,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2 group">
-          <Image src={"/logo.png"} alt="logo" width={150} height={150} />
+          <Image
+            src={"/logo.png"}
+            alt="logo"
+            width={250}
+            height={250}
+            className="w-32 h-auto md:w-62.5"
+          />
         </Link>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) =>

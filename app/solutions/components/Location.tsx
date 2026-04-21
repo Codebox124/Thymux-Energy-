@@ -61,13 +61,7 @@ const Location = () => (
                 <div className="text-gray-400">DMCC, Dubai, UAE</div>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-2 h-2 bg-white rounded-full mt-2"></div>
-              <div>
-                <div className="font-bold text-lg mb-1">Established</div>
-                <div className="text-gray-400">2025</div>
-              </div>
-            </div>
+          
             <div className="flex items-start gap-4">
               <div className="w-2 h-2 bg-white rounded-full mt-2"></div>
               <div>

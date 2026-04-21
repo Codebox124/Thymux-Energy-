@@ -60,7 +60,7 @@ const Hero = () => {
           >
             <Globe className="text-amber-500" size={16} />
             <span className="text-slate-300 text-xs md:text-sm font-medium tracking-wide uppercase">
-              <span className="hidden sm:inline">Established 2025 • </span>DMCC Dubai, UAE
+              <span className="hidden sm:inline"> </span>DMCC Dubai, UAE
             </span>
           </motion.div>
 

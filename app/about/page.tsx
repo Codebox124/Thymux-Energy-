@@ -43,12 +43,12 @@ export default function AboutUsPage() {
             variants={staggerContainer}
             className="max-w-5xl"
           >
-            <motion.span
+            {/* <motion.span
               variants={fadeInUp}
               className="inline-flex items-center justify-center py-1.5 px-4 mb-6 md:mb-8 text-[10px] font-bold tracking-[0.25em] uppercase text-white border border-white rounded-full bg-transparent"
             >
               Established 2025
-            </motion.span>
+            </motion.span> */}
 
             <motion.h1
               variants={fadeInUp}

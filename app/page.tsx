@@ -11,7 +11,7 @@ const Page = () => {
       <Stat />
       <Experties />
       
-      <Media />
+      {/* <Media /> */}
       <TrustedPartners />
       <section className="bg-white py-20 px-6">
         <div className="container mx-auto text-center">

@@ -26,22 +26,25 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
-    { name: "Solutions", href: "/solutions" },
     {
       name: "Our Strategy",
       href: "/strategy",
       subItems: [
-        { name: "Technology", href: "/strategy/technology" },
-        {
-          name: "Finance and Risk Management",
-          href: "/strategy/finance-and-risk-management",
-        },
+        { name: "Physical Trading", href: "/physical-trading" },
+        { name: "Risk Management", href: "/strategy/finance-and-risk-management" },
         { name: "Logistics", href: "/strategy/logistics" },
+        { name: "Finance", href: "/strategy/finance-and-risk-management" },
+        { name: "Technology", href: "/strategy/technology" },
       ],
     },
-    { name: "Projects", href: "/projects" },
-    { name: "Media", href: "/media" },
+    // { name: "Risk Management", href: "/strategy/finance-and-risk-management#riskmanagement" },
+    // { name: "Logistics", href: "/strategy/logistics" },
+    // { name: "Finance", href: "/strategy/finance-and-risk-management#finance" },
+    // { name: "Technology", href: "/strategy/technology" },
+    { name: "Solutions", href: "/solutions" },
+    // { name: "Projects", href: "/projects" },
+    { name: "Contact", href: "/contact" },
+    // { name: "Media", href: "/media" },
   ];
 
   return (

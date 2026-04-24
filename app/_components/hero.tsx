@@ -39,12 +39,12 @@ const Hero = () => {
     },
   };
 
-  return (
+  return ( //bg-[url('https://images.unsplash.com/photo-1584270148139-7dfa9637869b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]
     <section className="relative min-h-screen flex items-center pt-16 md:pt-20 overflow-hidden bg-slate-950">
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584270148139-7dfa9637869b?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center opacity md:opacity-80"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-slate-950/85 to-slate-950"></div>
+        <div className="absolute inset-0  bg-cover bg-center opacity md:opacity-80 bg-[url(/hero.jpg)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/50 via-slate-950/65 to-slate-950"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">

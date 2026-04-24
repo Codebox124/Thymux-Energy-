@@ -42,7 +42,7 @@ const Navbar = () => {
     // { name: "Finance", href: "/strategy/finance-and-risk-management#finance" },
     // { name: "Technology", href: "/strategy/technology" },
     { name: "Solutions", href: "/solutions" },
-    { name: "Projects", href: "/projects" },
+    // { name: "Projects", href: "/projects" },
     { name: "Contact", href: "/contact" },
     // { name: "Media", href: "/media" },
   ];

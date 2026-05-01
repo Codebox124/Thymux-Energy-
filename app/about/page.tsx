@@ -30,11 +30,9 @@ export default function AboutUsPage() {
   return (
     <main className="min-h-screen bg-neutral-50 text-navy-deep selection:bg-gold selection:text-white overflow-hidden">
       <section className="relative pt-20 pb-16 md:pt-40 md:pb-32 px-4 sm:px-6 md:px-12 lg:px-24 border-b border-navy-deep/10 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/about-hero-img.avif')] bg-cover bg-center" />
+        <div className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center opacity md:opacity-80" />
 
-        <div className="absolute inset-0 bg-navy-deep/85" />
-
-        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:16px_16px] opacity-20 pointer-events-none" />
+        <div className="absolute inset-0 bg-slate-950/70" />
 
         <div className="max-w-7xl mx-auto relative z-10">
           <motion.div

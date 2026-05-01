@@ -133,15 +133,9 @@ export default function ProjectsPage() {
     return (
         <div ref={containerRef}>
             {/* Hero Section - Dark with Background Image */}
-            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-[#1b2d42]">
-                <div
-                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                    style={{
-                        backgroundImage:
-                            "url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2072&auto=format&fit=crop')",
-                    }}
-                >
-                    <div className="absolute inset-0 bg-[#1b2d42]/85" />
+            <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-950">
+                <div className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url(/hero.jpg)]">
+                    <div className="absolute inset-0 bg-slate-950/70" />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">

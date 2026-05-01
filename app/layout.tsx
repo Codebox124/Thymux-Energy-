@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} ${nunito.variable} antialiased font-nunito bg-white`}
+        className={`${sora.variable} ${nunito.variable} antialiased font-nunito bg-white overflow-x-hidden`}
       >
         <Navbar />
         {children}

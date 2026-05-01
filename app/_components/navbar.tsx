@@ -24,28 +24,38 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "About", href: "/about" },
-    {
-      name: "Our Strategy",
-      href: "/strategy",
-      subItems: [
-        { name: "Physical Trading", href: "/physical-trading" },
-        { name: "Risk Management", href: "/strategy/finance-and-risk-management" },
-        { name: "Logistics", href: "/strategy/logistics" },
-        { name: "Finance", href: "/strategy/finance-and-risk-management" },
-        { name: "Technology", href: "/strategy/technology" },
-      ],
-    },
-    // { name: "Risk Management", href: "/strategy/finance-and-risk-management#riskmanagement" },
-    // { name: "Logistics", href: "/strategy/logistics" },
-    // { name: "Finance", href: "/strategy/finance-and-risk-management#finance" },
-    // { name: "Technology", href: "/strategy/technology" },
-    { name: "Solutions", href: "/solutions" },
-    // { name: "Projects", href: "/projects" },
-    { name: "Contact", href: "/contact" },
-    // { name: "Media", href: "/media" },
-  ];
+  // const navLinks = [
+  //   { name: "About", href: "/about" },
+  //   {
+  //     name: "Our Strategy",
+  //     href: "/strategy",
+  //     subItems: [
+  //       { name: "Physical Trading", href: "/physical-trading" },
+  //       { name: "Risk Management", href: "/strategy/finance-and-risk-management" },
+  //       { name: "Logistics", href: "/strategy/logistics" },
+  //       { name: "Finance", href: "/strategy/finance-and-risk-management" },
+  //       { name: "Technology", href: "/strategy/technology" },
+  //     ],
+  //   },
+  //   // { name: "Risk Management", href: "/strategy/finance-and-risk-management#riskmanagement" },
+  //   // { name: "Logistics", href: "/strategy/logistics" },
+  //   // { name: "Finance", href: "/strategy/finance-and-risk-management#finance" },
+  //   // { name: "Technology", href: "/strategy/technology" },
+  //   { name: "Solutions", href: "/solutions" },
+  //   // { name: "Projects", href: "/projects" },
+  //   { name: "Contact", href: "/contact" },
+  //   // { name: "Media", href: "/media" },
+  // ];
+
+  const navLinks:{name:string, href:string, subItems?:{name:string, href:string}[]}[] = [
+    {"name": "About", "href": "/about"},
+    {"name": "Our Strategy", "href": "/strategy"},
+    { name: "Physical Trading", href: "/physical-trading" },
+    { name: "Risk Management", href: "/risk-management" },
+    { name: "Logistics", href: "/logistics" },
+    { name: "Finance", href: "/finance" },
+    { name: "Contact Us", href: "/contact" },
+  ]
 
   return (
     <nav
@@ -62,10 +72,10 @@ const Navbar = () => {
             alt="logo"
             width={250}
             height={250}
-            className="w-32 h-auto md:w-62.5"
+            className="w-32 h-auto lg:w-62.5"
           />
         </Link>
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) =>
             link.subItems ? (
               <DropdownMenu key={link.name}>
@@ -90,7 +100,7 @@ const Navbar = () => {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-cream/80 hover:text-gold transition-colors font-nunito font-medium"
+                className="text-cream/80 hover:text-gold text-sm transition-colors font-nunito font-medium"
               >
                 {link.name}
               </Link>
@@ -106,7 +116,7 @@ const Navbar = () => {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-white"
+          className="lg:hidden text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <IconX size={30} /> : <IconMenu size={30} />}
@@ -120,7 +130,7 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 w-full bg-navy-deep border-t border-white/10 p-6 md:hidden flex flex-col gap-6 max-h-[90vh] overflow-y-auto"
+            className="absolute top-full left-0 w-full bg-navy-deep border-t border-white/10 p-6 lg:hidden flex flex-col gap-6 max-h-[90vh] overflow-y-auto"
           >
             {navLinks.map((link) => (
               <div key={link.name} className="flex flex-col gap-4">

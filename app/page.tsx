@@ -12,7 +12,7 @@ const Page = () => {
       <Experties />
       
       {/* <Media /> */}
-      <TrustedPartners />
+      {/* <TrustedPartners /> */}
       <section className="bg-white py-20 px-6">
         <div className="container mx-auto text-center">
           <h2 className="text-4xl font-sora font-bold text-navy-deep mb-6">

@@ -317,7 +317,7 @@ export default function AboutUsPage() {
                 </h2>
                 <p className="text-soft-blue-gray text-base md:text-lg font-light leading-relaxed">
                   We maintain onshore leased storage tanks in strategic
-                  locations including Basra, Iraq, with total capacity exceeding
+                  locations with total capacity exceeding
                   250,000 CBM. This enables rapid inventory access, flexible
                   delivery options, and lower operational costs for discharging,
                   handling, and loading.

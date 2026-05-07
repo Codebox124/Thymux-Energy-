@@ -48,7 +48,7 @@ const operations = [
         volume: "Spot & Term",
         description: "Market-leading cargo handling operations delivering premium Fuel Oil grades tailored to exact customer specifications — recognized as the lowest-cost provider in the region.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1605648916319-cf082f7524a1?q=80&w=2000&auto=format&fit=crop",
+        image: "/fueloiltrading.jpeg",
     },
     {
         icon: Droplets,
@@ -57,7 +57,7 @@ const operations = [
         volume: "Spot & Term",
         description: "Premium Gas Oil trading for diverse industrial, marine, and commercial sectors across the UAE and the wider Gulf region.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2000&auto=format&fit=crop",
+        image: "/gasoilsupply.jpeg",
     },
     {
         icon: Factory,
@@ -66,7 +66,7 @@ const operations = [
         volume: "Full Cargoes",
         description: "Vacuum Gas Oil sourcing and distribution connecting major refineries and industrial end-users across global markets.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?q=80&w=2000&auto=format&fit=crop",
+        image: "/vgotrading.jpeg",
     },
     {
         icon: Droplets,
@@ -75,7 +75,7 @@ const operations = [
         volume: "Full Range",
         description: "Full range Naphtha supply for petrochemical feedstock and handling, meeting stringent performance and environmental requirements.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2000&auto=format&fit=crop",
+        image: "/napthasupply.jpeg",
     },
     {
         icon: Ship,
@@ -84,16 +84,16 @@ const operations = [
         volume: "Full Cargoes",
         description: "Consistent Bitumen supply for infrastructure and construction projects worldwide, backed by strategic storage capacity exceeding 250,000 CBM.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=2000&auto=format&fit=crop",
+        image: "/bitumen.jpeg",
     },
     {
         icon: Ship,
-        title: "Marine Fuel Solutions",
+        title: "Base Oils",
         location: "Arabian Gulf",
         volume: "Spot & Term",
         description: "Comprehensive fuel supply and tailored logistics services for ship operators globally, backed by our in-house fleet and 250,000+ CBM storage network.",
         status: "Active",
-        image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=2000&auto=format&fit=crop",
+        image: "/baseoils.jpeg",
     },
 ]
 

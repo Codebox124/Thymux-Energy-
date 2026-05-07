@@ -45,14 +45,14 @@ const pillars = [
     href: "/strategy/technology",
     tag: "Technology",
   },
-  {
-    icon: Users,
-    title: "Our Team",
-    description:
-      "Industry-leading experts with decades of collective experience in trading, shipping, finance, and risk management.",
-    href: "/strategy/team",
-    tag: "Team",
-  },
+  // {
+  //   icon: Users,
+  //   title: "Our Team",
+  //   description:
+  //     "Industry-leading experts with decades of collective experience in trading, shipping, finance, and risk management.",
+  //   href: "/strategy/team",
+  //   tag: "Team",
+  // },
 ];
 
 const stats = [
